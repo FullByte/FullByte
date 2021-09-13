@@ -4,9 +4,14 @@
 
 # FullByte
 
-[![fullbyte github stats](https://github-readme-stats.vercel.app/api?username=fullbyte)](https://github.com/bzg/github-readme-stats)
+Public repositories
 
-- 🔭 I’m currently working on my personal wiki <https://0xfab1.net>
-- 🌱 I’m currently learning Azure
-- 👯 I’m looking to collaborate for IoT, board games, laser cutter and 3D printer techniques
-- 🤔 I’m looking for help with good climbing spots
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Fullbyte&show_icons=true&theme=blue-green)
+
+Languages used
+
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Fullbyte&theme=blue-green)
+
+How Idiots Track Success badge
+
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=Fullbyte)
