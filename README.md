@@ -1,5 +1,4 @@
 # FullByte
-# FullByte
 
 ## 🏆 GitHub Profile Trophy:
 ---
