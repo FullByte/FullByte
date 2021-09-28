@@ -6,11 +6,8 @@
 
 ![Fullbyte Stats](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Fullbyte&theme=solarized_dark)
 ![Fullbyte Stats](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Fullbyte&theme=solarized_dark)
+
 ![Fullbyte Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Fullbyte&theme=solarized_dark)
-
-![Fullbyte github stats](https://github-readme-stats.vercel.app/api?username=Fullbyte&theme=radical&show_icons=true&count_private=true)
-
-![Fullbyte Language_Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Fullbyte&theme=blue-green)
 
 <!--START_SECTION:waka-->
 ```text
