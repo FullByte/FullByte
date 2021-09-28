@@ -6,7 +6,6 @@
 
 ![Fullbyte Stats](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Fullbyte&theme=solarized_dark)
 ![Fullbyte Stats](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Fullbyte&theme=solarized_dark)
-
 ![Fullbyte Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Fullbyte&theme=solarized_dark)
 
 <!--START_SECTION:waka-->
