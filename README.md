@@ -8,8 +8,8 @@
 
 <!--START_SECTION:waka-->
 ```text
-Markdown     56 mins         ██████████████▓░░░░░░░░░░   58.50 % 
-YAML         37 mins         █████████▓░░░░░░░░░░░░░░░   38.25 % 
-PowerShell   3 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.25 % 
+Markdown     6 hrs 39 mins   ██████████████████▒░░░░░░   73.36 % 
+Python       2 hrs 4 mins    █████▓░░░░░░░░░░░░░░░░░░░   22.95 % 
+YAML         19 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.65 % 
 ```
 <!--END_SECTION:waka-->
