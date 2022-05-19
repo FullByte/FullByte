@@ -14,8 +14,8 @@ jobs:
         uses: Platane/snk@master
         with:
           github_user_name: ${{ github.repository_owner }}
-          gif_out_path: assets/github-snake.gif
-          svg_out_path: assets/github-snake.svg          
+          gif_out_path: github-snake.gif
+          svg_out_path: github-snake.svg          
       # Commit the changes
       - name: Commit files
         run: |
@@ -27,5 +27,5 @@ jobs:
       - name: Push
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
