@@ -4,4 +4,4 @@
 
 ![snake](github-snake.svg)
 
-<script async defer data-website-id="99982a27-74b5-4e2f-83b7-11283e92fe5e" src="https://umami.0xfab1.net/umami.js"></script>
+
