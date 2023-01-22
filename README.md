@@ -4,4 +4,4 @@
 
 ![snake](github-snake.svg)
 
-
+<a rel="me" href="https://social.lol/@yolo">Mastodon</a>
