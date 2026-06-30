@@ -1,0 +1,207 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --panel: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --primary: #22d3ee;
+  --danger: #f43f5e;
+  --ok: #34d399;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #0f172a 60%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.panel {
+  background: color-mix(in srgb, var(--panel) 92%, black);
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.subtitle,
+.hint {
+  color: var(--muted);
+}
+
+.stats {
+  padding: 0.6rem 0.8rem;
+  background: #0f172a;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.three-col {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  border: 1px solid #475569;
+  border-radius: 8px;
+  background: #0f172a;
+  color: var(--text);
+  padding: 0.5rem 0.65rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  background: #334155;
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover:enabled {
+  background: #475569;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: var(--primary);
+  color: #00222a;
+}
+
+.selected-task {
+  min-height: 3rem;
+  border: 1px dashed #475569;
+  border-radius: 8px;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.todo-item {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: #0b1225;
+}
+
+.todo-main {
+  flex: 1;
+}
+
+.todo-title,
+.todo-meta {
+  margin: 0;
+}
+
+.todo-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.todo-item.selected {
+  outline: 2px solid var(--primary);
+}
+
+.delete-btn {
+  background: color-mix(in srgb, var(--danger) 70%, #111827);
+}
+
+.timer {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: 800;
+  margin: 0.35rem 0 0;
+}
+
+.phase {
+  margin: 0;
+}
+
+.playlist-form {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.playlist-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.toast {
+  margin-top: 0.7rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+}
+
+.toast.ok {
+  border-color: var(--ok);
+}
+
+.toast.warn {
+  border-color: #f59e0b;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 1rem;
+  }
+}
