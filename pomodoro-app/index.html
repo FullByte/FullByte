@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro + Box Breathing + Todos</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="panel">
+      <h1>Pomodoro Flow</h1>
+      <p class="subtitle">Todo-Planung, Box Breathing, Fokus-Timer und Stretch-Erinnerungen</p>
+      <div class="stats">
+        <span>Abgeschlossene Fokus-Sessions: <strong id="completed-count">0</strong></span>
+      </div>
+      <p id="app-toast" class="toast">Bereit.</p>
+    </header>
+
+    <section class="panel grid two-col">
+      <article>
+        <h2>1) Todos planen (max. 5)</h2>
+        <form id="todo-form" class="todo-form">
+          <label>
+            Todo
+            <input id="todo-title" name="title" type="text" maxlength="120" placeholder="z. B. Landingpage Wireframe" required>
+          </label>
+          <label>
+            Aufwand (Minuten)
+            <select id="todo-effort" name="effort" required>
+              <option value="5">5</option>
+              <option value="15" selected>15</option>
+              <option value="30">30</option>
+              <option value="55">55</option>
+            </select>
+          </label>
+          <button type="submit">Todo hinzufügen</button>
+        </form>
+        <p id="todo-limit-info" class="hint">Noch 5 von 5 Todo-Slots frei.</p>
+        <ul id="todo-list" class="todo-list"></ul>
+      </article>
+
+      <article>
+        <h2>2) Als Erstes wählen & starten</h2>
+        <p class="hint">Wähle ein Todo als nächstes aus. Beim Start beginnt zuerst Box Breathing, danach die Fokuszeit.</p>
+        <div id="selected-task" class="selected-task">Kein Todo ausgewählt</div>
+        <button id="start-flow-btn" class="primary" disabled>Flow starten</button>
+      </article>
+    </section>
+
+    <section class="panel grid three-col">
+      <article>
+        <h2>Box Breathing</h2>
+        <p id="breathing-phase" class="phase">Bereit</p>
+        <p id="breathing-timer" class="timer">00:00</p>
+      </article>
+
+      <article>
+        <h2>Fokus-Timer</h2>
+        <p id="task-title" class="phase">Warte auf Start</p>
+        <p id="task-timer" class="timer">00:00</p>
+      </article>
+
+      <article>
+        <h2>Stretch-Erinnerung</h2>
+        <p id="stretch-info" class="phase">Keine aktive Fokus-Session</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Hintergrundmusik (Playlist mit 5 Songs)</h2>
+      <p class="hint">Trage 5 öffentliche Audio-URLs ein (mp3/ogg/m4a). Die Songs laufen in Schleife nacheinander.</p>
+      <form id="playlist-form" class="playlist-form">
+        <label>Song 1 URL <input type="url" id="song-1" required placeholder="https://example.com/song1.mp3"></label>
+        <label>Song 2 URL <input type="url" id="song-2" required placeholder="https://example.com/song2.mp3"></label>
+        <label>Song 3 URL <input type="url" id="song-3" required placeholder="https://example.com/song3.mp3"></label>
+        <label>Song 4 URL <input type="url" id="song-4" required placeholder="https://example.com/song4.mp3"></label>
+        <label>Song 5 URL <input type="url" id="song-5" required placeholder="https://example.com/song5.mp3"></label>
+        <div class="playlist-actions">
+          <button type="submit">Playlist speichern</button>
+          <button type="button" id="toggle-music-btn" disabled>Musik starten</button>
+        </div>
+      </form>
+      <p id="music-info" class="hint">Noch keine Playlist gespeichert.</p>
+      <audio id="player" preload="auto"></audio>
+    </section>
+  </main>
+
+  <template id="todo-item-template">
+    <li class="todo-item">
+      <button class="pick-btn" type="button" aria-label="Dieses Todo als erstes wählen">Als Erstes</button>
+      <div class="todo-main">
+        <p class="todo-title"></p>
+        <p class="todo-meta"></p>
+      </div>
+      <button class="delete-btn" type="button" aria-label="Todo löschen">Entfernen</button>
+    </li>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>
